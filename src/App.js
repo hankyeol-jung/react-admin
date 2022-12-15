@@ -1,8 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { Chart as ChartJS } from "chart.js/auto";
+import { Line } from "react-chartjs-2";
 
 function App() {
   let [menuName, setMenuName] = useState([
@@ -15,6 +16,43 @@ function App() {
     "App 신청 및 관리",
     "통계",
   ]);
+
+  const data = {
+    labels: [
+      "1월 27일",
+      "1월 28일",
+      "1월 29일",
+      "1월 30일",
+      "1월 31일",
+      "2월 1일",
+      "2월 2일",
+    ],
+    datasets: [
+      {
+        label: "페이지뷰",
+        data: [0, 1, 2, 8, 20, 1, 17],
+        borderColor: "#B5E4FE",
+        backgroundColor: "#B5E4FE90",
+        pointBackgroundColor: "#B5E4FE",
+      },
+      {
+        label: "방문자",
+        data: [0, 12, 4, 6, 8, 1, 5],
+        borderColor: "#3DB6FE",
+        backgroundColor: "#3DB6FE90",
+        pointBackgroundColor: "#3DB6FE",
+      },
+    ],
+  };
+
+  const options = {
+    responsive: true,
+    pointStyle: "circle",
+    borderWidth: 2,
+    pointRadius: 5,
+    pointBorderColor: "#fff",
+    fill: true,
+  };
 
   return (
     <div className="App">
@@ -63,11 +101,16 @@ function App() {
         <div className="flex justify-between w-full py-6 bg-neutral-100 px-7">
           <div className="w-[calc(100%_-_23.9375rem)]">
             <div className="bg-white shadow-sm p-7 grid grid-cols-3 gap-[5.5rem]">
+              {/* 방문자 요약 */}
               <div className="col-span-2 text-left">
                 <p className="mb-12 text-base font-medium text-neutral-900">
                   방문자 요약
                 </p>
+                {/* <div className="w-full h-80 bg-red-50"></div> */}
+                <Line type="line" data={data} options={options} />
               </div>
+
+              {/* 사이트 요약 */}
               <div className="text-left">
                 <p className="mb-12 text-base font-medium text-neutral-900">
                   사이트 요약
