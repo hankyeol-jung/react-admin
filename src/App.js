@@ -318,7 +318,42 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <div className="mb-5 text-left bg-white shadow-sm p-7 last:mb-0"></div>
+                {/* 소식 */}
+                <div className="mb-5 text-left bg-white shadow-sm p-7 last:mb-0">
+                  <p className="mb-4 text-base font-medium text-neutral-900">
+                    소식
+                  </p>
+                  {/* 활동내역 */}
+                  <div className="mt-3">
+                    <p className="text-base font-medium text-neutral-900">
+                      [UPDATE 89] 대시보드 요약 및 메모 기능, 한글폰트7종, 쇼핑
+                      기획전 개선 등 업데이트 소식
+                    </p>
+                    <p className="text-[0.9375rem] font-normal text-neutral-500">
+                      대시보드 요약 및 관리자 메모대시보드 메인에서사용 중인
+                      버전과 만료일, 도메인, SSL, SMS 현황 등 각종 상태를 한
+                      눈에 파악할 수 있도록 ...
+                    </p>
+                    <p className="text-xs font-normal text-neutral-500">
+                      01월 29일
+                    </p>
+                  </div>
+                  {/* 활동내역 */}
+                  <div className="mt-3">
+                    <p className="text-base font-medium text-neutral-900">
+                      [UPDATE 89] 대시보드 요약 및 메모 기능, 한글폰트7종, 쇼핑
+                      기획전 개선 등 업데이트 소식
+                    </p>
+                    <p className="text-[0.9375rem] font-normal text-neutral-500">
+                      대시보드 요약 및 관리자 메모대시보드 메인에서사용 중인
+                      버전과 만료일, 도메인, SSL, SMS 현황 등 각종 상태를 한
+                      눈에 파악할 수 있도록 ...
+                    </p>
+                    <p className="text-xs font-normal text-neutral-500">
+                      01월 29일
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
