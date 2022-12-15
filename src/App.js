@@ -62,15 +62,93 @@ function App() {
         </header>
         <div className="flex justify-between w-full py-6 bg-neutral-100 px-7">
           <div className="w-[calc(100%_-_23.9375rem)]">
-            <div className="bg-white shadow-sm">
-              <div className="">방문자 요약</div>
-              <div className="">사이트 요약</div>
+            <div className="bg-white shadow-sm p-7 grid grid-cols-3 gap-[5.5rem]">
+              <div className="col-span-2 text-left">
+                <p className="mb-12 text-base font-medium text-neutral-900">
+                  방문자 요약
+                </p>
+              </div>
+              <div className="text-left">
+                <p className="mb-12 text-base font-medium text-neutral-900">
+                  사이트 요약
+                </p>
+                {/* 오늘 신규회원 */}
+                <div className="mb-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <p className="text-sm font-normal text-neutral-800">
+                      오늘 신규회원
+                      <b> 0</b>
+                    </p>
+                    <p className="text-sm font-medium text-neutral-900">-</p>
+                  </div>
+                  <div class="w-full bg-neutral-100 h-1 mb-6">
+                    <div class="bg-cyan-400 h-1 w-[30%]"></div>
+                  </div>
+                </div>
+                {/* 오늘 방문자 */}
+                <div className="mb-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <p className="text-sm font-normal text-neutral-800">
+                      오늘 신규회원
+                      <b> 0</b>
+                    </p>
+                    <p className="text-sm font-medium text-neutral-900">-</p>
+                  </div>
+                  <div class="w-full bg-neutral-100 h-1 mb-6">
+                    <div class="bg-cyan-400 h-1 w-[30%]"></div>
+                  </div>
+                </div>
+                {/* 오늘 트래픽 */}
+                <div className="mb-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <p className="text-sm font-normal text-neutral-800">
+                      오늘 트래픽
+                    </p>
+                    <p className="text-sm font-medium text-neutral-900">
+                      데이터 수집 준비 중
+                    </p>
+                  </div>
+                  <div class="w-full bg-neutral-100 h-1 mb-6">
+                    <div class="bg-cyan-400 h-1 w-[50%]"></div>
+                  </div>
+                </div>
+                {/* 주간 평균 방문자 */}
+                <div className="mb-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <p className="text-sm font-normal text-neutral-800">
+                      주간 평균 방문자
+                      <b> 0</b>
+                    </p>
+                    <p className="text-sm font-medium text-red-600">-100%</p>
+                  </div>
+                  <div class="w-full bg-neutral-100 h-1 mb-6">
+                    <div class="bg-cyan-400 h-1 w-[00%]"></div>
+                  </div>
+                </div>
+                {/* 사용 공간 */}
+                <div className="mb-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <p className="text-sm font-normal text-neutral-800">
+                      사용 공간
+                    </p>
+                    <p className="text-sm font-medium text-neutral-900">
+                      데이터 수집 준비 중
+                    </p>
+                  </div>
+                  <div class="w-full bg-neutral-100 h-1 mb-6">
+                    <div class="bg-cyan-400 h-1 w-[0%]"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <div className="w-[21.4375rem] ml-10">
             <div class="bg-zinc-700 pt-7 mb-6 shadow-sm">
-              <div>
+              <div className="text-center">
+                <span className="flex items-center justify-center w-[3.75rem] h-[3.75rem] mx-auto text-4xl rounded-full bg-neutral-200 text-neutral-500 mb-3">
+                  <FontAwesomeIcon icon={faUser} />
+                </span>
                 <p className="text-base font-medium text-white">관리자</p>
                 <p className="text-sm font-medium text-neutral-400">
                   whd6023@naver.com
@@ -207,7 +285,7 @@ function App() {
                 </span>
               </div>
             </div>
-            <div className="mb-6 bg-yellow-100 shadow-sm p-7">
+            <div className="bg-yellow-100 shadow-sm p-7">
               <div class="flex items-center justify-start">
                 <span className="flex items-center justify-center w-10 h-10 mr-3 text-2xl rounded-full bg-neutral-200 text-neutral-500">
                   <FontAwesomeIcon icon={faUser} />
