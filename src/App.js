@@ -1,6 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   let [menuName, setMenuName] = useState([
@@ -196,7 +198,14 @@ function App() {
                   관리
                 </button>
               </div>
-              <div></div>
+              <div className="flex items-center justify-start text-2xl text-neutral-500">
+                <span className="flex items-center justify-center w-10 h-10 ml-2 rounded-full bg-neutral-200 first:ml-0 ">
+                  <FontAwesomeIcon icon={faUser} />
+                </span>
+                <span className="flex items-center justify-center w-10 h-10 ml-2 rounded-full bg-neutral-200 first:ml-0 ">
+                  <FontAwesomeIcon icon={faUser} />
+                </span>
+              </div>
             </div>
           </div>
         </div>
