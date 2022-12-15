@@ -58,6 +58,148 @@ function App() {
             </button>
           </div>
         </header>
+        <div className="flex justify-between w-full py-6 bg-neutral-100 px-7">
+          <div className="w-[calc(100%_-_23.9375rem)]">
+            <div className="bg-white shadow-sm">
+              <div className="">방문자 요약</div>
+              <div className="">사이트 요약</div>
+            </div>
+          </div>
+
+          <div className="w-[21.4375rem] ml-10">
+            <div class="bg-zinc-700 pt-7 mb-6 shadow-sm">
+              <div>
+                <p className="text-base font-medium text-white">관리자</p>
+                <p className="text-sm font-medium text-neutral-400">
+                  whd6023@naver.com
+                </p>
+              </div>
+              <div className="border-b p-7 border-neutral-600">
+                <div className="flex items-center justify-between h-6 mb-2">
+                  <div className="flex items-center">
+                    <p className="w-16 text-sm font-medium text-left text-neutral-400">
+                      사용버전
+                    </p>
+                    <span className="h-full px-3 text-sm font-medium text-white block rounded-full bg-[#8595AC]">
+                      global
+                    </span>
+                  </div>
+                  <button
+                    type="button"
+                    className="text-sm font-medium text-red-600"
+                  >
+                    업그레이드
+                  </button>
+                </div>
+                <div className="flex items-center justify-between h-6 mb-2">
+                  <div className="flex items-center">
+                    <p className="w-16 text-sm font-medium text-left text-neutral-400">
+                      만료일
+                    </p>
+                    <p className="text-sm font-medium text-white">
+                      2019-07-02(512일 남음)
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    className="text-sm font-medium text-red-600"
+                  >
+                    연장
+                  </button>
+                </div>
+                <div className="flex items-center justify-between h-6">
+                  <div className="flex items-center">
+                    <p className="w-16 text-sm font-medium text-left text-neutral-400">
+                      PG
+                    </p>
+                    <p className="text-sm font-medium text-white">미가입</p>
+                  </div>
+                  <button
+                    type="button"
+                    className="text-sm font-medium text-neutral-400"
+                  >
+                    설정
+                  </button>
+                </div>
+              </div>
+              <div className="p-7">
+                <div className="flex items-center justify-between h-6 mb-2">
+                  <div className="flex items-center">
+                    <p className="w-16 text-sm font-medium text-left text-neutral-400">
+                      APP
+                    </p>
+                    <p className="text-sm font-medium text-white">
+                      iOS 미사용 / Android 미사용
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    className="text-sm font-medium text-red-600"
+                  >
+                    설정
+                  </button>
+                </div>
+                <div className="flex items-center justify-between h-6 mb-2">
+                  <div className="flex items-center">
+                    <p className="w-16 text-sm font-medium text-left text-neutral-400">
+                      도메인
+                    </p>
+                    <p className="text-sm font-medium text-white">
+                      기본 도메인 사용 중
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    className="text-sm font-medium text-red-600"
+                  >
+                    설정
+                  </button>
+                </div>
+                <div className="flex items-center justify-between h-6 mb-2">
+                  <div className="flex items-center">
+                    <p className="w-16 text-sm font-medium text-left text-neutral-400">
+                      SSL
+                    </p>
+                    <p className="text-sm font-medium text-white">
+                      사용 (기본 도메인 자동 적용)
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    className="text-sm font-medium text-red-600"
+                  >
+                    연장
+                  </button>
+                </div>
+                <div className="flex items-center justify-between h-6">
+                  <div className="flex items-center">
+                    <p className="w-16 text-sm font-medium text-left text-neutral-400">
+                      SMS
+                    </p>
+                    <p className="text-sm font-medium text-white">0건</p>
+                  </div>
+                  <button
+                    type="button"
+                    className="text-sm font-medium text-red-600"
+                  >
+                    충전
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="mb-6 bg-white shadow-sm p-7">
+              <div class="flex items-start justify-between mb-6">
+                <p className="text-base text-medium text-neutral-900">
+                  운영진 설정
+                </p>
+                <button className="text-sm text-medium text-neutral-500">
+                  관리
+                </button>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
