@@ -100,7 +100,7 @@ function App() {
         </header>
         <div className="flex justify-between w-full py-6 bg-neutral-100 px-7">
           <div className="w-[calc(100%_-_23.9375rem)]">
-            <div className="bg-white shadow-sm p-7 grid grid-cols-3 gap-[5.5rem]">
+            <div className="bg-white shadow-sm p-7 grid grid-cols-3 gap-[5.5rem] mb-6">
               {/* 방문자 요약 */}
               <div className="col-span-2 text-left">
                 <p className="mb-12 text-base font-medium text-neutral-900">
@@ -182,6 +182,79 @@ function App() {
                     <div class="bg-cyan-400 h-1 w-[0%]"></div>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-9">
+              <div>
+                <div className="mb-5 text-left bg-white shadow-sm">
+                  <div className="flex items-center p-7">
+                    <p className="mr-2 text-base font-medium text-neutral-900">
+                      오늘의 할일
+                    </p>
+                    <span className="px-4 py-px text-white bg-[#3DB6FE] rounded-full ">
+                      2
+                    </span>
+                  </div>
+                  {/* 상품 */}
+                  <div className="pt-6 pb-5 border-t px-7 border-neutral-200">
+                    <div className="flex items-center justify-between mb-3">
+                      <p className="text-sm font-bold text-neutral-900">
+                        201801190001
+                      </p>
+                      <p className="text-sm font-normal text-neutral-500">
+                        01월 19일
+                      </p>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center">
+                        <span className="mr-3 w-14 h-14 bg-neutral-400"></span>
+                        <div>
+                          <p className="text-base font-medium text-neutral-900">
+                            덕다운 롱패딩 라이트 베이지
+                          </p>
+                          <p className="text-base font-normal text-neutral-500">
+                            사이즈 : S / 용량 : 355ml / 수량: 1개
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-base font-medium text-neutral-900">
+                        배송준비
+                      </p>
+                    </div>
+                  </div>
+                  {/* 상품 */}
+                  <div className="pt-6 pb-5 border-t px-7 border-neutral-200">
+                    <div className="flex items-center justify-between mb-3">
+                      <p className="text-sm font-bold text-neutral-900">
+                        201801190001
+                      </p>
+                      <p className="text-sm font-normal text-neutral-500">
+                        01월 19일
+                      </p>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center">
+                        <span className="mr-3 w-14 h-14 bg-neutral-400"></span>
+                        <div>
+                          <p className="text-base font-medium text-neutral-900">
+                            덕다운 롱패딩 라이트 베이지
+                          </p>
+                          <p className="text-base font-normal text-neutral-500">
+                            사이즈 : S / 용량 : 355ml / 수량: 1개
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-base font-medium text-neutral-900">
+                        입금대기
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-white shadow-sm p-7"></div>
+              </div>
+              <div>
+                <div className="mb-5 bg-white shadow-sm p-7"></div>
+                <div className="bg-white shadow-sm p-7"></div>
               </div>
             </div>
           </div>
