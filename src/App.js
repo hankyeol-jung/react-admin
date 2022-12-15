@@ -42,7 +42,22 @@ function App() {
         </div>
       </div>
       <div className="w-[calc(100%_-_16rem)] ml-64">
-        <p className="">ddkdkdkdk</p>
+        <header className="flex items-center justify-between w-full shadow-md px-7 h-14">
+          <button
+            type="button"
+            className="ml-2 text-lg font-medium text-gray-800"
+          >
+            홈페이지 이름
+          </button>
+          <div>
+            <button className="px-6 py-2 border border-gray-300 border-solid rounded-sm">
+              미리보기
+            </button>
+            <button className="px-6 py-2 ml-2 border border-gray-300 border-solid rounded-sm">
+              나가기
+            </button>
+          </div>
+        </header>
       </div>
     </div>
   );
