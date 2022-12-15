@@ -207,6 +207,25 @@ function App() {
                 </span>
               </div>
             </div>
+            <div className="mb-6 bg-yellow-100 shadow-sm p-7">
+              <div class="flex items-center justify-start">
+                <span className="flex items-center justify-center w-10 h-10 mr-3 text-2xl rounded-full bg-neutral-200 text-neutral-500">
+                  <FontAwesomeIcon icon={faUser} />
+                </span>
+                <p className="text-base text-bold text-neutral-900">관리자</p>
+              </div>
+              <div className="ml-[3.25rem] text-left mt-4">
+                <textarea
+                  name=""
+                  className="w-full bg-yellow-100 border-b border-neutral-300"
+                  id=""
+                  placeholder="관리자들과 공유할 메모를 남겨주세요"
+                ></textarea>
+                <button className="px-4 mt-1 text-sm bg-white border rounded-full text-neutral-800 h-7 border-neutral-300">
+                  메모
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
