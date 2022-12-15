@@ -280,35 +280,45 @@ function App() {
                       <p className="mr-4">5 조회</p>
                     </div>
                   </div>
-                  {/* 콘텐츠 아이템 */}
-                  <div className="mt-6">
-                    <p className="text-base font-medium text-neutral-900">
-                      쇼핑몰 이용방법
-                    </p>
-                    <div className="flex items-center text-sm font-normal text-neutral-700">
-                      <p className="mr-4">관리자</p>
-                      <p className="mr-4">FAQ</p>
-                      <p className="mr-4">2017년 11월 06일</p>
-                      <p className="mr-4">5 조회</p>
-                    </div>
-                  </div>
-                  {/* 콘텐츠 아이템 */}
-                  <div className="mt-6">
-                    <p className="text-base font-medium text-neutral-900">
-                      쇼핑몰 이용방법
-                    </p>
-                    <div className="flex items-center text-sm font-normal text-neutral-700">
-                      <p className="mr-4">관리자</p>
-                      <p className="mr-4">FAQ</p>
-                      <p className="mr-4">2017년 11월 06일</p>
-                      <p className="mr-4">5 조회</p>
-                    </div>
-                  </div>
                 </div>
               </div>
               <div>
-                <div className="mb-5 bg-white shadow-sm p-7"></div>
-                <div className="bg-white shadow-sm p-7"></div>
+                {/* 활동 */}
+                <div className="mb-5 text-left bg-white shadow-sm p-7 last:mb-0">
+                  <p className="mb-2 text-base font-medium text-neutral-900">
+                    활동
+                  </p>
+                  {/* 활동내역 */}
+                  <div className="flex items-center mt-5">
+                    <span className="flex items-center justify-center mr-3 text-2xl rounded-full text-neutral-500 w-11 h-11 bg-neutral-200">
+                      <FontAwesomeIcon icon={faUser} />
+                    </span>
+                    <div>
+                      <p className="text-base font-medium text-neutral-900">
+                        <b>한결</b>님이 가입했습니다.
+                      </p>
+                      <div className="flex items-center text-sm font-normal text-neutral-500">
+                        <p className="mr-3">2017년 11월 06일</p>
+                      </div>
+                    </div>
+                  </div>
+                  {/* 활동내역 */}
+                  <div className="flex items-center mt-5">
+                    <span className="flex items-center justify-center mr-3 text-2xl rounded-full text-neutral-500 w-11 h-11 bg-neutral-200">
+                      <FontAwesomeIcon icon={faUser} />
+                    </span>
+                    <div>
+                      <p className="text-base font-medium text-neutral-900">
+                        쇼핑몰 이용방법
+                      </p>
+                      <div className="flex items-center text-sm font-normal text-neutral-500">
+                        <p className="mr-3">공지사항</p>
+                        <p className="mr-3">2017년 11월 06일</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mb-5 text-left bg-white shadow-sm p-7 last:mb-0"></div>
               </div>
             </div>
           </div>
