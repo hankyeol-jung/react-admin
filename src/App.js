@@ -186,7 +186,8 @@ function App() {
             </div>
             <div className="grid grid-cols-2 gap-9">
               <div>
-                <div className="mb-5 text-left bg-white shadow-sm">
+                {/* 오늘의 할일 */}
+                <div className="mb-5 text-left bg-white shadow-sm last:mb-0">
                   <div className="flex items-center p-7">
                     <p className="mr-2 text-base font-medium text-neutral-900">
                       오늘의 할일
@@ -250,7 +251,60 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white shadow-sm p-7"></div>
+                {/* 인기 콘텐츠 */}
+                <div className="mb-5 text-left bg-white shadow-sm p-7 last:mb-0">
+                  <p className="mb-1 text-base font-medium text-neutral-900">
+                    인기 콘텐츠
+                  </p>
+                  {/* 콘텐츠 아이템 */}
+                  <div className="mt-6">
+                    <p className="text-base font-medium text-neutral-900">
+                      쇼핑몰 이용방법
+                    </p>
+                    <div className="flex items-center text-sm font-normal text-neutral-700">
+                      <p className="mr-4">관리자</p>
+                      <p className="mr-4">FAQ</p>
+                      <p className="mr-4">2017년 11월 06일</p>
+                      <p className="mr-4">5 조회</p>
+                    </div>
+                  </div>
+                  {/* 콘텐츠 아이템 */}
+                  <div className="mt-6">
+                    <p className="text-base font-medium text-neutral-900">
+                      쇼핑몰 이용방법
+                    </p>
+                    <div className="flex items-center text-sm font-normal text-neutral-700">
+                      <p className="mr-4">관리자</p>
+                      <p className="mr-4">FAQ</p>
+                      <p className="mr-4">2017년 11월 06일</p>
+                      <p className="mr-4">5 조회</p>
+                    </div>
+                  </div>
+                  {/* 콘텐츠 아이템 */}
+                  <div className="mt-6">
+                    <p className="text-base font-medium text-neutral-900">
+                      쇼핑몰 이용방법
+                    </p>
+                    <div className="flex items-center text-sm font-normal text-neutral-700">
+                      <p className="mr-4">관리자</p>
+                      <p className="mr-4">FAQ</p>
+                      <p className="mr-4">2017년 11월 06일</p>
+                      <p className="mr-4">5 조회</p>
+                    </div>
+                  </div>
+                  {/* 콘텐츠 아이템 */}
+                  <div className="mt-6">
+                    <p className="text-base font-medium text-neutral-900">
+                      쇼핑몰 이용방법
+                    </p>
+                    <div className="flex items-center text-sm font-normal text-neutral-700">
+                      <p className="mr-4">관리자</p>
+                      <p className="mr-4">FAQ</p>
+                      <p className="mr-4">2017년 11월 06일</p>
+                      <p className="mr-4">5 조회</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div>
                 <div className="mb-5 bg-white shadow-sm p-7"></div>
